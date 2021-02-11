@@ -1,0 +1,14 @@
+<div class="syndetKomponentti">
+    <br>
+<section class="syndetBox">
+    <h1>Birthday WishList</h1>
+    <label> {{ kysymys }}</label>
+    <br>
+    <div [hidden]="clicks === 9">
+        <input class="syndevastaus-input" type="text" (input)="syndeVastaus($event)" [(ngModel)]="parent.syndeVastaus">
+    </div>
+    <br>
+    <button [disabled]="parent.syndeVastaus.length < 1" [hidden]="clicks === 9" class="btn" (click)="syndetKysymys()">Next</button>
+    <button [hidden]="clicks < 9" routerLink="/printSynde" class="btn">Print</button>
+</section>
+</div>

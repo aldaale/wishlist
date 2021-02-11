@@ -1,0 +1,14 @@
+<div class="tausta">
+    <section class="box">
+        <br>
+        <h1>Wedding Wishlist</h1>
+        <label>{{ kysymys }}</label>
+        <br>
+        <div [hidden]="clicks === 8">
+            <input class="vastaus-input" type="text" (input)=vastausYksi($event) [(ngModel)]="parent.vastaus">
+        </div>
+        <br>
+        <button [disabled]="parent.vastaus.length < 1" [hidden]="clicks === 8" (click)="uusiKysymys()">Next</button>
+        <button [hidden]="clicks < 8" routerLink="/tulosta">Print</button>
+    </section>
+</div>

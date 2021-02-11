@@ -1,0 +1,50 @@
+.syndetKomponentti {
+    background-image: url(../../images/bdaybg.jpg);
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.syndetBox {
+    width: 1000px;
+    height: 600px;
+    background-color:white;
+    text-align: center;
+    align-content: center;
+    margin: 90px auto;
+    box-shadow: 5px 10px 18px #888888;
+    position: absolute;
+    top: 10%;
+    left: 24%;
+}
+
+h1{
+    margin-top: 120px;
+    margin-bottom: 30px;
+    color: #BF9DD0;
+    font-size: 4rem;
+}
+
+label{
+    color: #BF9DD0;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.syndeVastaus-input{
+    margin-left: 19px;
+    width: 120mm;
+}
+
+input {
+    margin: 5px;
+}
+
+button{
+    margin: 20px;
+    padding: 20px;
+    border: 1px #BF9DD0 solid;
+}

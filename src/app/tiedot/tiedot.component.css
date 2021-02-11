@@ -1,0 +1,64 @@
+.tausta{
+    background-image: url(../../images/christmas.jpg);
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.box {
+    width: 1000px;
+    height: 600px;
+    background-color:white;
+    text-align: center;
+    align-content: center;
+    margin: 90px auto;
+    box-shadow: 5px 10px 18px #888888;
+    position: absolute;
+    top: 10%;
+    left: 24%;
+}
+
+h2{
+    margin-top: 120px;
+    color: crimson;
+    font-size: 2.5rem;
+}
+
+h1{
+    margin-bottom: 30px;
+    color: crimson;
+    font-size: 4rem;
+}
+
+label{
+    color: crimson;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.ika{
+    margin-right: 28px;
+}
+
+input {
+    margin: 5px;
+}
+
+button{
+    margin: 20px;
+    padding: 20px;
+}
+
+.nimi-input {
+    margin: 5px;
+}
+
+.form-control {
+    width: 15rem;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    display: inline;
+}

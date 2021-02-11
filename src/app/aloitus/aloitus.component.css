@@ -1,0 +1,40 @@
+.background {
+    background-image: url(../../images/clipboard.jpeg);
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.box {
+    width: 1000px;
+    height: 600px;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    top: 32%;
+    left: 22%;
+}
+
+h1 {
+    text-align: center;
+    align-content: center;
+    color: black;
+    font-size: 4rem;
+}
+
+h2 {
+    text-align: center;
+    align-content: center;
+    color:black;
+    font-size: 2.5rem;
+    margin-top: 100px;
+}
+
+button {
+    text-align: center;
+    align-content: center;
+    margin: 20px;
+    padding: 20px;
+}

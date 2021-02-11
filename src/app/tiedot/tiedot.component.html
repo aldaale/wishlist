@@ -1,0 +1,33 @@
+<section class="tausta">
+  <br>
+   <form #userForm="ngForm">
+    <section class="box">
+      <br>
+
+      <!-- {{ userForm.value | json }} -->
+
+      <div class="form-group">
+      <h2>Welcome to</h2>  
+      <h1>Christmas Wishlist</h1>
+      <div>
+        <label>Name</label>
+        <input class="nimi-input" #name="ngModel" [class.is-invalid]="name.invalid && name.touched" class="form-control is-invalid" [(ngModel)]="userModel.name" type="text" required name="name" (input)="lisaaNimi($event)">
+      <!--<small class="text-danger" [class.d-none]="name.valid || name.untouched" >Name is required</small> -->  
+      </div>
+   
+      </div>
+
+      <div class="form-group">
+        <div class="form-group">
+        <label class="ika">Age</label>
+        <input class="ika-input" #age="ngModel" [class.is-invalid]="age.invalid && age.touched" class="form-control is-invalid" required [(ngModel)]="userModel.age" type="text" (input)="lisaaIka($event)" name="age">
+      <!--  <small class="text-danger" [class.d-none]="age.valid || age.untouched">Age is required</small> -->
+        <br>
+        <button routerLink="/questions" class="btn btn-danger" [disabled]="parent.nimi.length < 1 || parent.ika.length < 1" (click)="naytaTiedot()">Next</button>
+        </div>
+        <br>
+      </div>
+  </section>
+ </form>
+</section>
+     
